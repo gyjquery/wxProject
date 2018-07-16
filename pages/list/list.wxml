@@ -1,0 +1,21 @@
+<!--pages/list/acc.wxml-->
+<import src="/pages/template/list-template.wxml" />
+<view class="header">
+    <swiper indicator-dots indicator-color="pink" indicator-active-color="blue" autoplay="true" interval="2000" circular="true">
+        <swiper-item>
+            <image src="/images/detail/carousel/01.jpg"/>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/detail/carousel/02.jpg"/>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/detail/carousel/03.jpg"/>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/detail/carousel/04.jpg"/>
+        </swiper-item>
+    </swiper>
+
+    <template is="msgItem" wx:for="{{list}}" wx:key="index" data="{{...item}}"/>
+</view>
+

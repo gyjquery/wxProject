@@ -1,0 +1,7 @@
+<view class="san">
+<image src='{{userInfo.avatarUrl}}'></image>
+<view class="text">{{userInfo.nickName}}</view>
+<view class="parent">
+<text class="myclick" catchtap="hander">开启小程序之旅</text>
+</view>
+</view>
