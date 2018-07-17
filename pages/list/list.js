@@ -18,7 +18,14 @@ Page({
     })
 console.log(this.data.list)
   },
-
+ toDetail(event){
+    console.log(event)
+    let index = event.currentTarget.dataset.id;
+    let url = '/pages/detail/detail?id='+index;
+     wx.navigateTo({
+         url
+     })
+ },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -48,7 +55,7 @@ console.log(this.data.list)
   },
 
   /**
-   * 页面相关事件处理函数--监听用户下拉动作
+   *    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
   
@@ -58,7 +65,7 @@ console.log(this.data.list)
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+     
   },
 
   /**
